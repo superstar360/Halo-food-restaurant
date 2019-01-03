@@ -79,5 +79,24 @@ header {
    text-transform: uppercase;
 }
 
+/* Welcome Text */
+.welcome {
+  margin-top: 15rem;
+  text-align: center;
+}
 
+/* button */
+.but {
+  background-color: transparent;
+  padding: 0.6rem;
+  border: 0.2rem solid #ef831dde;
+}
 
+/* Hover the navbar*/
+ul li a:hover, ul li a:focus {
+  color:#ef831dde;
+ }
+/* Hover the button*/
+ ul li button.but:hover, ul li button.but:focus {
+  border: 0.2rem solid #f5f2eede;
+ }
