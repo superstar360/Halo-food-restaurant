@@ -1,8 +1,82 @@
 /*  Reset */
-*{
+*,
+*::after,
+*::before{
   margin:0;
   padding:0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%
+}
+
+body {
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif, Arial;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  color: #555;
+  background-color: #111;
+  background-image: url("/Resources/CSS/Image/what-the-hex-dark.png")
+
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto
+}
+
+h1 {
+ font-size: 240%;
+ font-weight: 30rem;
+ color: #fff;
+ text-transform: uppercase;
+ word-spacing: .4rem;
+ letter-spacing: .1rem
+}
+
+/* ---------------------------------------------- */
+/* HEADER */
+/* ---------------------------------------------- */
+header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("/Resources/CSS/Image/hero3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Logo */
+
+.logo {
+   height: 12rem;
+   width: auto;
+   float: left;
+   margin-top: 2rem;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 6rem;
+
+}
+
+.main-nav ul{
+  margin-left: 10rem
+}
+
+.main-nav li {
+   display: inline-block;
+   margin-left: 3rem
+}
+
+.main-nav li a {
+  text-decoration: none;
+   color: #fff;
+   font-size: 1.6rem;
+   text-transform: uppercase;
 }
 
 
