@@ -18,7 +18,8 @@ body {
   text-rendering: optimizeLegibility;
   color: #555;
   background-color: #111;
-  background-image: url("/Resources/CSS/Image/what-the-hex-dark.png")
+  background-image: url("./Image/what-the-hex-dark.png");
+  background-color: rgba(2, 2, 12, 0.856);
 
 }
 
@@ -80,6 +81,11 @@ header {
 }
 
 /* Welcome Text */
+.welcome1 {
+  margin-top: 20rem;
+  text-align: center;
+}
+
 .welcome {
   margin-top: 15rem;
   text-align: center;
@@ -99,4 +105,84 @@ ul li a:hover, ul li a:focus {
 /* Hover the button*/
  ul li button.but:hover, ul li button.but:focus {
   border: 0.2rem solid #f5f2eede;
+ }
+
+
+ /* center the buttons */
+ .center-btn {
+  margin-top: 8%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+ }
+
+ /* the center button*/
+.btn {
+  color: rgba(175, 138, 35, 0.986);
+  font-size: 120%;
+  background-color: transparent;
+  padding: 0.9rem;
+  border: 0.2rem solid #b3a69ade;
+  border-radius: 0.5rem;
+}
+
+ /* Hover the center button */
+ a button.btn:hover {
+   border: 0.2rem solid #f5f2eede;
+   color: rgb(224, 138, 7);
+   cursor: pointer;
+ }
+/* image property */
+ .img-caption {
+   float: right;
+
+ }
+
+ /* image styles */
+ .img-responsive {
+  border:0.2rem solid #555;
+  max-width: 70%;
+  padding-top: 0rem;
+  float: right;
+  border-radius: 0.1rem;
+ }
+
+ /* when scrolling navbar*/
+ .scroll-nav {
+   position: fixed;
+   
+ }
+/* navbar background when scrolling*/
+.backgrd-clr {
+  background: rgba(0,0,0,0.9);
+  position: fixed;
+  width: 100%;
+  padding-bottom: 8rem;
+  margin-left: -11rem;
+}
+
+ /* about caption */
+
+ .about-cap {
+   padding-top: 2rem;
+   color: aliceblue;
+   font: 120%;
+   font-style: inherit;
+   font-weight: inherit;
+ }
+
+ .about-header, h4 {
+   text-align: center;
+ }
+
+ .content {
+   padding: 5rem;
+   height: 20rem;
+   font-size: 4rem;
+   color: rgba(253, 255, 253, 0.959);
+   margin: 0rem;
+   width: 100%;
+   background-color: rgba(2, 2, 12, 0.856);
+
  }
