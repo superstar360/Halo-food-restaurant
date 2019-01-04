@@ -151,3 +151,57 @@ ul li:last-child a:hover {
   background-color: 1px solid  #cf6d17;
   color: #fff
 }
+
+/* image property */
+.img-caption {
+  float: right;
+
+}
+
+/* image styles */
+.img-responsive {
+ border:0.2rem solid #555;
+ max-width: 70%;
+ padding-top: 0rem;
+ float: right;
+ border-radius: 0.1rem;
+}
+
+/* when scrolling navbar*/
+.scroll-nav {
+  position: fixed;
+  
+}
+/* navbar background when scrolling*/
+.backgrd-clr {
+ background: rgba(0,0,0,0.9);
+ position: fixed;
+ width: 100%;
+ padding-bottom: 8rem;
+ margin-left: -11rem;
+}
+
+/* about caption */
+
+.about-cap {
+  padding-top: 2rem;
+  color: aliceblue;
+  font: 120%;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+.about-header, h4 {
+  text-align: center;
+}
+
+.content {
+  padding: 5rem;
+  height: 20rem;
+  font-size: 4rem;
+  color: rgba(253, 255, 253, 0.959);
+  margin: 0rem;
+  width: 100%;
+  background-color: rgba(2, 2, 12, 0.856);
+
+}
