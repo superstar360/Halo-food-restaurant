@@ -17,9 +17,8 @@ body {
   font-weight: 300;
   text-rendering: optimizeLegibility;
   color: #555;
-  background-color: #111;
-  background-image: url("/Resources/CSS/Image/what-the-hex-dark.png")
-
+  overflow: hidden;
+  position: relative;
 }
 
 .row {
@@ -39,28 +38,25 @@ h1 {
 /* ---------------------------------------------- */
 /* HEADER */
 /* ---------------------------------------------- */
-header {
-  height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("./Image/hero3.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
+header {
+ position: absolute;
+ left: 0;
+ right: 0
+}
 /* Logo */
 
 .logo {
    height: 12rem;
    width: auto;
    float: left;
-   margin-top: 2rem;
+  margin-top: 1rem
 }
 
 .main-nav {
   float: right;
   list-style: none;
-  margin-top: 6rem;
-
+  margin-top: 5rem
 }
 
 .main-nav ul{
@@ -74,29 +70,84 @@ header {
 
 .main-nav li a {
   text-decoration: none;
-   color: #fff;
+  color: #fff;
    font-size: 1.6rem;
    text-transform: uppercase;
+   font-weight: 600;
+   transition: color 0.4s
 }
 
-/* Welcome Text */
-.welcome {
-  margin-top: 15rem;
-  text-align: center;
-}
-
-/* button */
-.but {
-  background-color: transparent;
-  padding: 0.6rem;
-  border: 0.2rem solid #ef831dde;
-}
-
-/* Hover the navbar*/
 ul li a:hover, ul li a:focus {
-  color:#ef831dde;
- }
-/* Hover the button*/
- ul li button.but:hover, ul li button.but:focus {
-  border: 0.2rem solid #f5f2eede;
- }
+  color: #e67e22;
+}
+
+ul li:last-child a {
+  border: .2rem solid #e67e22;
+  padding: .8rem 1.7rem
+}
+
+
+ul li:last-child a:hover {
+  border: .2rem solid #fff;
+  color:  #e67e22
+}
+
+/* ---------------------------------------------- */
+/* HOME */
+/* ---------------------------------------------- */
+
+.home-hero{
+   background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../CSS/Image/hero1.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh
+}
+
+/* Hero Text */
+.hero-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem  3rem;
+  font-weight: 300;
+  border-radius: 20rem;
+  transition: background-color 0.2s, border 0.2s, color 0.2s
+}
+
+.btn-full:link,
+.btn-full:visited{
+   background-color: #e67e22; 
+   border: 1px solid  #e67e22;
+   color: #fff;
+   margin-right: 1.5rem
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+   border: 1px solid #e67e22;
+   color:  #e67e22
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  background-color: 1px solid  #cf6d17;
+  color: #fff
+}
