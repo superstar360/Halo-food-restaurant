@@ -18,11 +18,15 @@ var i = 0,
 
 // start slider
  function startSlider() {
-  slider.style.backgroundImage = "linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(" + images[i] + ")";
-  i = 1
+    slider.style.backgroundImage = "linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(" + images[i] + ")";
+    i++;
   setTimeout(() => {
-    
-  }, timeout);
+      if (i >= 3){
+          i = 0;
+      }
+      startSlider(i)
+
+  }, time);
  }
 
 // Move Right
@@ -46,7 +50,4 @@ function moveLeft() {
   }
   
 }
-
-
-
 
