@@ -213,12 +213,14 @@ ul li:last-child a:hover {
 
 .left {
   left: 0;
-  margin-left: 2rem
+  margin-left: 2rem;
+  margin-top: -60rem;
 }
 
 .right {
    right: 0;
-   margin-right: 2rem
+   margin-right: 2rem;
+   margin-top: -60rem;
 }
 
 .left:hover polyline,
