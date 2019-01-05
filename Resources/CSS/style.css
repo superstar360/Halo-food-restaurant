@@ -12,13 +12,11 @@ html {
 }
 
 body {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: 'Lato', sans-serif, Arial;
   font-weight: 300;
   text-rendering: optimizeLegibility;
   color: #555;
-  overflow: hidden;
-  position: relative;
 }
 
 .row {
@@ -42,7 +40,8 @@ h1 {
 header {
  position: absolute;
  left: 0;
- right: 0
+ right: 0;
+ z-index: 999
 }
 /* Logo */
 
@@ -97,12 +96,29 @@ ul li:last-child a:hover {
 /* ---------------------------------------------- */
 
 .home-hero{
-   background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../CSS/Image/hero1.jpg");
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-   height: 100vh
+   height: 100vh;
 }
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+
 
 /* Hero Text */
 .hero-text-box {
@@ -151,3 +167,54 @@ ul li:last-child a:hover {
   background-color: 1px solid  #cf6d17;
   color: #fff
 }
+
+
+.arrows button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  outline:0;
+}
+
+.arrow {
+  position: absolute;
+  font-weight: 300;
+  top: 40%;
+  transform: translateY(50%);
+  cursor: pointer;
+}
+
+.left {
+  left: 0;
+  margin-left: 2rem
+}
+
+.right {
+   right: 0;
+   margin-right: 2rem
+}
+
+.left:hover polyline,
+.left:focus polyline {
+  stroke-width: 3;
+}
+
+.left:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+.right:hover polyline,
+.right:focus polyline {
+  stroke-width: 3;
+}
+
+.right:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+polyline {
+  transition: all 250ms ease-in-out;
+}
+
