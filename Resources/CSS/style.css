@@ -17,6 +17,7 @@ body {
   font-weight: 300;
   text-rendering: optimizeLegibility;
   color: #555;
+  position: relative;
 }
 
 .row {
@@ -49,8 +50,22 @@ header {
    height: 12rem;
    width: auto;
    float: left;
+   margin-top: 1rem
+}
+
+/* logo 2*/
+
+.logo1 {
+  height: 8rem;
+  width: auto;
+  float: left;
+  padding-left: 5rem;
   margin-top: 1rem
 }
+
+/*----------------------------------*/
+/* Navigation bar Section */
+/*----------------------------------*/
 
 .main-nav {
   float: right;
@@ -67,7 +82,9 @@ header {
    margin-left: 3rem
 }
 
-.main-nav li a {
+.main-nav li a,
+.btn-menus li a,
+.btn-order li a {
   text-decoration: none;
   color: #fff;
    font-size: 1.6rem;
@@ -100,6 +117,9 @@ ul li:last-child a:hover {
    background-size: cover;
    background-repeat: no-repeat;
    height: 100vh;
+   z-index: 0;
+   overflow: hidden;
+   background-attachment: fixed;
 }
 
 .fade {
@@ -126,8 +146,14 @@ ul li:last-child a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center
+  text-align: center;
+  margin-top: -75rem;
+  z-index: 0.5;
 }
+
+/*----------------------------------*/
+/* buttons section css */
+/*----------------------------------*/
 
 .btn {
   display: inline-block;
@@ -167,6 +193,7 @@ ul li:last-child a:hover {
   background-color: 1px solid  #cf6d17;
   color: #fff
 }
+
 
 
 .arrows button {
@@ -218,3 +245,145 @@ polyline {
   transition: all 250ms ease-in-out;
 }
 
+
+.btn-order {
+  padding-top: 2rem;
+}
+
+.btn-menus {
+  padding: 4rem;
+}
+/* when scrolling navbar*/
+.scroll-nav {
+  position: fixed;
+  
+}
+/* navbar background when scrolling*/
+.backgrd-clr {
+ background: rgba(0,0,0,0.9);
+ position: fixed;
+ width: 100%;
+ padding-bottom: 6rem;
+ margin-left: -10.5rem;
+ padding-left: 5rem;
+ z-index: 1;
+}
+
+/* image property */
+.img-caption {
+  float: right;
+}
+
+/* image styles */
+.img-responsive {
+ border:0.2rem solid #555;
+ max-width: 50%;
+ padding-top: 0rem;
+ float: right;
+ border-radius: 0.1rem;
+}
+
+/*----------------------------------*/
+/* Reservation Section */
+/*----------------------------------*/
+
+.order {
+  color: #fff;
+  width: 100%;
+  height: auto;
+  padding: 10rem;
+  text-align: center;
+  letter-spacing: 0.4rem;
+  text-justify: distribute-all-lines;
+  background: rgba(0,0,0,0.9);
+  background-image: url("/Resources/CSS/Image/pattern2.png");
+  background-repeat: repeat;
+  background-size: 30rem;
+}
+
+.order-items {
+  padding: 0.8rem;
+}
+
+/*----------------------------------*/
+/* Menu section */
+/*----------------------------------*/
+
+.Menu-section {
+  /* background-image: url("/Resources/CSS/Image/Nigerian-Restaurants.png");
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat; */
+
+  background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("/Resources/CSS/Image/jellof.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+   z-index: 0;
+   overflow: hidden;
+   background-attachment: fixed;
+   position: sticky;
+}
+
+/* Menu items*/
+
+.Menu-item1 {
+  text-align: center;
+  text-justify: distribute-all-lines;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  font-weight: 800;
+  text-align-last: center;
+  color: #fff;
+  padding: 0.8rem;
+  -ms-text-size-adjust: 10fr;
+  -ms-text-justify: distribute;
+  -ms-text-align-last: center;
+}
+
+.Menu-item2 {
+  text-align: center;
+  text-justify: distribute-all-lines;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  padding: 0.8rem;
+  color: #e67e22; 
+}
+
+/* Menu Text container */
+.Menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* margin-top: -60rem; */
+  z-index: 0.5;
+}
+
+/*----------------------------------*/
+/* The About section */
+/*----------------------------------*/
+
+ .about_section {
+  position: initial;
+  color: #fff;
+  width: 100%;
+  height: auto;
+  padding: 10rem;
+  text-align: center;
+  background: rgba(0,0,0,0.9);
+  background-image: url("/Resources/CSS/Image/pattern2.png");
+  background-repeat: repeat;
+  background-size: 30rem;
+} 
+
+.about-item2 p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  font-weight: 200;
+}
