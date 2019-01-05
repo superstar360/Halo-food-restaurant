@@ -17,7 +17,6 @@ body {
   font-weight: 300;
   text-rendering: optimizeLegibility;
   color: #555;
-  overflow: hidden;
   position: relative;
 }
 
@@ -50,6 +49,16 @@ header {
    height: 12rem;
    width: auto;
    float: left;
+   margin-top: 1rem
+}
+
+/* logo 2*/
+
+.logo1 {
+  height: 8rem;
+  width: auto;
+  float: left;
+  padding-left: 5rem;
   margin-top: 1rem
 }
 
@@ -101,7 +110,7 @@ ul li:last-child a:hover {
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-   height: 100vh
+   height: 100vh;
 }
 
 /* Hero Text */
@@ -110,7 +119,8 @@ ul li:last-child a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center
+  text-align: center;
+  margin-top: -28rem;
 }
 
 .btn {
@@ -152,21 +162,6 @@ ul li:last-child a:hover {
   color: #fff
 }
 
-/* image property */
-.img-caption {
-  float: right;
-
-}
-
-/* image styles */
-.img-responsive {
- border:0.2rem solid #555;
- max-width: 70%;
- padding-top: 0rem;
- float: right;
- border-radius: 0.1rem;
-}
-
 /* when scrolling navbar*/
 .scroll-nav {
   position: fixed;
@@ -177,31 +172,38 @@ ul li:last-child a:hover {
  background: rgba(0,0,0,0.9);
  position: fixed;
  width: 100%;
- padding-bottom: 8rem;
- margin-left: -11rem;
+ padding-bottom: 6rem;
+ margin-left: -10.5rem;
+ padding-left: 5rem;
 }
 
-/* about caption */
-
-.about-cap {
-  padding-top: 2rem;
-  color: aliceblue;
-  font: 120%;
-  font-style: inherit;
-  font-weight: inherit;
+/* image property */
+.img-caption {
+  float: right;
 }
 
-.about-header, h4 {
-  text-align: center;
+/* image styles */
+.img-responsive {
+ border:0.2rem solid #555;
+ max-width: 50%;
+ padding-top: 0rem;
+ float: right;
+ border-radius: 0.1rem;
 }
 
-.content {
-  padding: 5rem;
-  height: 20rem;
-  font-size: 4rem;
-  color: rgba(253, 255, 253, 0.959);
-  margin: 0rem;
+.order {
+  color: #fff;
   width: 100%;
-  background-color: rgba(2, 2, 12, 0.856);
+  height: auto;
+  padding: 10rem;
+  text-align: center;
+  background: rgba(0,0,0,0.9);
+}
 
+.about_section {
+position: initial;
+}
+
+.space {
+  /* padding-left: 10rem; */
 }
