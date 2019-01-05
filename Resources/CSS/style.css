@@ -77,7 +77,9 @@ header {
    margin-left: 3rem
 }
 
-.main-nav li a {
+.main-nav li a,
+.btn-menus li a,
+.btn-order li a {
   text-decoration: none;
   color: #fff;
    font-size: 1.6rem;
@@ -123,7 +125,8 @@ ul li:last-child a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  margin-top: -28rem;
+  margin-top: -60rem;
+  z-index: 0.5;
 }
 
 .btn {
@@ -166,19 +169,13 @@ ul li:last-child a:hover {
 }
 
 
-.btn-tag {
+.btn-order {
   padding-top: 2rem;
 }
 
-ul li.btn-classic a {
-  font-weight: 500;
-  color: #fff;
-  text-decoration: none;
-  border: 0.2rem solid #e67e22;
-  padding: 0.5rem;
-  background-color: inherit;
+.btn-menus {
+  padding: 4rem;
 }
-
 /* when scrolling navbar*/
 .scroll-nav {
   position: fixed;
@@ -192,6 +189,7 @@ ul li.btn-classic a {
  padding-bottom: 6rem;
  margin-left: -10.5rem;
  padding-left: 5rem;
+ z-index: 1;
 }
 
 /* image property */
@@ -231,9 +229,55 @@ position: initial;
 /* Menu section */
 
 .Menu-section {
-  background-image: url("/Resources/CSS/Image/Nigerian-Restaurants.png");
+  /* background-image: url("/Resources/CSS/Image/Nigerian-Restaurants.png");
   width: 100%;
   height: auto;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+
+  background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("/Resources/CSS/Image/jellof.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+   z-index: 0;
+   overflow: hidden;
+   background-attachment: fixed;
+   position: sticky;
+}
+
+.Menu-item1 {
+  text-align: center;
+  text-justify: distribute-all-lines;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  font-weight: 800;
+  text-align-last: center;
+  color: #fff;
+  padding: 0.8rem;
+  -ms-text-size-adjust: 10fr;
+  -ms-text-justify: distribute;
+  -ms-text-align-last: center;
+}
+
+.Menu-item2 {
+  text-align: center;
+  text-justify: distribute-all-lines;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  padding: 0.8rem;
+  color: #e67e22; 
+}
+
+.Menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* margin-top: -60rem; */
+  z-index: 0.5;
 }
