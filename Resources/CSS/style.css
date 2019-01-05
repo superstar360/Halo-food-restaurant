@@ -111,6 +111,9 @@ ul li:last-child a:hover {
    background-size: cover;
    background-repeat: no-repeat;
    height: 100vh;
+   z-index: 0;
+   overflow: hidden;
+   background-attachment: fixed;
 }
 
 /* Hero Text */
@@ -217,10 +220,20 @@ ul li.btn-classic a {
   background-size: 30rem;
 }
 
-.about_section {
+/* .about_section {
 position: initial;
-}
+} */
 
 .article p {
   font-weight: 300;
+}
+
+/* Menu section */
+
+.Menu-section {
+  background-image: url("/Resources/CSS/Image/Nigerian-Restaurants.png");
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
