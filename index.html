@@ -13,13 +13,13 @@
 </head>
 <body>
   <header>
-    </div>
     <div class="row">
-      <div class="span-1-of-3">
-        <a href="/"><img class = "logo" src="./Resources/CSS/Image/d69e8b3c-ddb5-4b1a-9e28-489299aefcbe.png" alt="HaloFood Logo"></a>
-      </div>
-      <div class="main-nav span-2-of-3">
-        <nav>
+      <div id="scroll">
+         <div id="span-scroll" class="span-1-of-3">
+            <a href="/"><img id="img-size" class = "logo" src="./Resources/CSS/Image/d69e8b3c-ddb5-4b1a-9e28-489299aefcbe.png" alt="HaloFood Logo"></a>
+         </div>
+       <div class="main-nav span-2-of-3">
+        <nav id="navid">
           <ul>
            <li ><a href="">About</a></li>
            <li ><a href="">Menus</a></li>
@@ -31,8 +31,10 @@
         </nav>
       </div>
     </div>
+    </div>
   </header>
 
+  <!-- The Welcome Text Section -->
   <section class="home-hero">
       <div class="hero-text-box">
           <h1>Welcome to Halofood</h1>
@@ -41,7 +43,54 @@
      </div>
   </section>
 
+<!-- The Reservations Section -->
+  <section class="Order-section">
+      <div class="order">
+          <h5 class="order-items">HaloFood is a modern Take on traditional Nigerian cuisine, featuring unique</h5>
+          <h5 class="order-items">shared plates and specially garnished jollof rice.</h5>
+          <ul class="btn-order">
+              <li class=""><a href="">Reservations</a></li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="Menu-section ">
+      <div class="Menu row">
+            <h3 class="Menu-item1">Taste. Touch. Hear. Experience. </h3>
+            <h3 class="Menu-item2">HaloFood</h3>
+            <ul class="btn-menus">
+              <li><a href="">View Menus</a></li>
+            </ul>
+      </div>
+  </section>
+
+  <section class="about_section">
+      <div class="row">
+          <div class="span-2-0f-3">
+              <img src="Resources/CSS/Image/Nigerian-Restaurants.png" alt="" class="img-responsive">
+          </div>
+          <div class="span-1-of-3">
+            <h3 class="about-item1">About Us</h3>
+              <p class="about-item2">
+                  It is a long established fact that a reader
+                   will be distracted by the readable content of
+                    a page when looking at its layout. The point of 
+                    using Lorem Ipsum is that it has a more-or-less 
+                    normal distribution of letters, as opposed to using 
+                    'Content here, content here', making it look like 
+                    readable English. Many desktop publishing packages and
+                     web page editors now use Lorem Ipsum as their default 
+                     model text, and a search for 'lorem ipsum' will 
+                     uncover many web sites still in their infancy. Various 
+                     versions have evolved over the years, sometimes by accident, 
+                     sometimes on purpose (injected humour and the like).
+              </p>
+          </div>
+      </div>
+  </section>
+
   <script src="/Resources/js/app.js"></script>
+  <script src="/Resources/js/scroller.js"></script>
   
 </body>
 </html>
