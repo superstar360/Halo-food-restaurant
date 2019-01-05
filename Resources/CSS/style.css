@@ -212,18 +212,16 @@ ul li:last-child a:hover {
   height: auto;
   padding: 10rem;
   text-align: center;
+  letter-spacing: 0.4rem;
+  text-justify: distribute-all-lines;
   background: rgba(0,0,0,0.9);
   background-image: url("/Resources/CSS/Image/pattern2.png");
   background-repeat: repeat;
   background-size: 30rem;
 }
 
-/* .about_section {
-position: initial;
-} */
-
-.article p {
-  font-weight: 300;
+.order-items {
+  padding: 0.8rem;
 }
 
 /* Menu section */
@@ -245,6 +243,8 @@ position: initial;
    background-attachment: fixed;
    position: sticky;
 }
+
+/* Menu items*/
 
 .Menu-item1 {
   text-align: center;
@@ -272,6 +272,7 @@ position: initial;
   color: #e67e22; 
 }
 
+/* Menu Text container */
 .Menu {
   position: absolute;
   top: 50%;
@@ -280,4 +281,23 @@ position: initial;
   text-align: center;
   /* margin-top: -60rem; */
   z-index: 0.5;
+}
+
+/* The About section */
+
+ .about_section {
+  position: initial;
+  color: #fff;
+  width: 100%;
+  height: auto;
+  padding: 10rem;
+  text-align: center;
+  background: rgba(0,0,0,0.9);
+  background-image: url("/Resources/CSS/Image/pattern2.png");
+  background-repeat: repeat;
+  background-size: 30rem;
+} 
+
+.article p {
+  font-weight: 300;
 }
