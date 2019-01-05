@@ -162,6 +162,20 @@ ul li:last-child a:hover {
   color: #fff
 }
 
+
+.btn-tag {
+  padding-top: 2rem;
+}
+
+ul li.btn-classic a {
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  border: 0.2rem solid #e67e22;
+  padding: 0.5rem;
+  background-color: inherit;
+}
+
 /* when scrolling navbar*/
 .scroll-nav {
   position: fixed;
@@ -198,9 +212,15 @@ ul li:last-child a:hover {
   padding: 10rem;
   text-align: center;
   background: rgba(0,0,0,0.9);
+  background-image: url("/Resources/CSS/Image/pattern2.png");
+  background-repeat: repeat;
+  background-size: 30rem;
 }
 
 .about_section {
 position: initial;
 }
 
+.article p {
+  font-weight: 300;
+}
