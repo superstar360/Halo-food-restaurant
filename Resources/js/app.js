@@ -36,7 +36,7 @@ function moveRight() {
   
 }
 
-
+// Move Left
 function moveLeft() {
   slider.style.backgroundImage = "linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(" + images[i] + ")";
   if(i === 0) {
@@ -49,23 +49,4 @@ function moveLeft() {
 
 
 
-
-/*
-function changeImage() {
-  header.style.backgroundImage = "linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(" + images[i] + ")";
-
- 
-  if(i < images.length - 1) {
-    i++
-  } else {
-    i = 0
-  }
-
-   
-  setTimeout(function(){
-    changeImage();
-    
-  }, time)
-   
-} */
 
