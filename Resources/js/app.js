@@ -10,7 +10,7 @@ arrowLeft.addEventListener("click", moveLeft);
 
 var i = 0,
     images = [],
-    time = 5000;
+    time = 4000;
 
     images[0] = '/Resources/CSS/Image/hero1.jpg';
     images[1] = '/Resources/CSS/Image/hero2.jpg';
