@@ -151,7 +151,7 @@ ul li:last-child a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  margin-top: -75rem;
+  margin-top: -95rem;
   z-index: 0.5;
 }
 
@@ -219,13 +219,13 @@ ul li:last-child a:hover {
 .left {
   left: 0;
   margin-left: 2rem;
-  margin-top: -60rem;
+  margin-top: -78rem;
 }
 
 .right {
    right: 0;
    margin-right: 2rem;
-   margin-top: -60rem;
+   margin-top: -78rem;
 }
 
 .left:hover polyline,
@@ -276,10 +276,6 @@ polyline {
  z-index: 1;
 }
 
-/* image property */
-.img-caption {
-  float: right;
-}
 
 /* image styles */
 .img-responsive {
@@ -393,4 +389,54 @@ polyline {
 .about-item2 p {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
   font-weight: 200;
+}
+
+/*----------------------------------*/
+/* The Gallery section */
+/*----------------------------------*/
+
+.gallery-items {
+  background-image: url("/Resources/CSS/Image/pattern2.png");
+  background-repeat: repeat;
+  background-size: 30rem;
+}
+
+.gallery-item1,
+.gallery-item2 {
+  float: left;
+  width: 50%;
+  border: 0rem solid #cf6d17;
+  padding: 6rem;
+}
+
+.gallery-title {
+    text-align: center;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    letter-spacing: 0.4rem;
+    color: #cf6d17;
+    font-weight: 600;
+    font-size: 120%;
+}
+
+.img-responsiv {
+  max-width: 100%;
+  width: 550px;
+  height: 385px;
+  border: 0.2rem solid #555;
+}
+
+.img-caption1 {
+  font-weight: 600;
+  color: #e7dccb;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  padding: 0.4rem;
+}
+
+.img-caption2 {
+  text-align: center;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  font-weight: 300;
 }
