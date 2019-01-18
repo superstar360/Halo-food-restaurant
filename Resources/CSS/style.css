@@ -388,7 +388,7 @@ ul.btn-order li {
   color: #fff;
   width: 100%;
   height: auto;
-  padding: 10rem;
+  padding: 4rem 10rem 4rem 10rem;
   text-align: center;
   background: rgba(0,0,0,0.9);
   background-image: url("/Resources/CSS/Image/pattern2.png");
@@ -396,19 +396,31 @@ ul.btn-order li {
   background-size: 30rem;
 } 
 
+.about-item1 {
+  padding-bottom: 4rem;
+  font-weight: 1000;
+  font-size: 130%;
+
+}
+
 .about-item2 p {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
   font-weight: 200;
+}
+
+.col-md-1 {
+  margin-left: 30%;
 }
 
 /*----------------------------------*/
 /* The Gallery section */
 /*----------------------------------*/
 
-div.gallery-section {
-  background-image: url("/Resources/CSS/Image/pattern2.png");
+.gallery-section {
+  background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("/Resources/CSS/Image/pattern2.png");
   background-repeat: repeat;
   background-size: 30rem;
+  z-index: inherit;
 }
 
 .gallery-items {
@@ -419,6 +431,7 @@ div.gallery-section {
   grid-gap: 3rem;
   padding-left: 5rem;
   padding-right: 5rem;
+  padding-bottom: 2rem;
 }
 
 
@@ -435,10 +448,11 @@ div.gallery-section {
     text-align: center;
     padding-top: 2.4rem;
     padding-bottom: 2.4rem;
-    letter-spacing: 0.4rem;
-    color: #cf6d17;
+    letter-spacing: 0.1rem;
+    color: #f8f6f6;
     font-weight: 1000;
-    font-size: 150%;
+    font-size: 180%;
+    text-transform: uppercase;
 }
 
 .img-responsiv {
@@ -451,7 +465,7 @@ div.gallery-section {
 
 .img-caption1 {
   font-weight: 600;
-  color: #111010;
+  color: #c27b11;
   text-align: center;
   letter-spacing: 0.3rem;
   padding: 0.4rem;
@@ -460,7 +474,8 @@ div.gallery-section {
 .img-caption2 {
   text-align: center;
   letter-spacing: 0.2rem;
-  color: rgb(15, 14, 14);
+  color: rgb(252, 243, 243);
+  font-size: 110%;
   font-weight: 300;
 }
 
